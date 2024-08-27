@@ -50,7 +50,7 @@ const ADMONITION_END = '\n:::';
 marked.setOptions({
 	gfm: true,
 });
-marked.use(markedSmartypants());
+marked.use(markedSmartypants() as any);
 marked.use({
 	extensions: [
 		{

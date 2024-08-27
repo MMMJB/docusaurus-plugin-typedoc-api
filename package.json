@@ -4,7 +4,7 @@
   "scripts": {
     "check": "yarn run type && yarn run lint",
     "clean": "packemon clean --cwd packages/plugin",
-    "docs": "yarn run build && cd website && yarn run start",
+    "docs": "npm run build && cd website && npm run start",
     "build": "packemon build --addEngines --cwd packages/plugin",
     "pack": "rimraf packages/plugin/tsconfig.lib.tsbuildinfo && packemon pack --addEngines --declaration --cwd packages/plugin",
     "format": "prettier --write .",
